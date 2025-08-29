@@ -1,46 +1,59 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
 .header {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .navbar {
-  background-color: #111;
-  border-radius: 5rem;
   display: flex;
   justify-content: center;
-  height: 4rem;
-  width: auto;
+  align-items: center;
+  height: 3rem;
   padding: 0.2rem;
+  background-color: #111;
+  border-radius: 5rem;
+  width: auto;
 }
 
 .nav-items {
-  align-items: center;
   display: flex;
+  align-items: center;
   gap: 3rem;
+  list-style: none;
   height: 100%;
   width: 100%;
-  list-style: none;
 }
 
 .header a {
   color: white;
   font-size: 1.2rem;
-  padding: 1rem 2rem;
   text-decoration: none;
-  transition: color 0.3s;
+  padding: 0.42rem 1rem;
   border-radius: 5rem;
+  transition: color 0.3s;
 }
 
 .header a:hover {
   background-color: #333;
   transition: ease 0.3s;
+}
+
+/* Test Section (Red Background) */
+.hero {
+  background-color: red;
+  height: 100vh;
 }

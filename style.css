@@ -31,7 +31,7 @@ html {
 }
 
 .nav-items.active {
-  max-height: 100vh;  /* full screen height */
+  max-height: 20rem;  /* full screen height */
   padding: 2rem 0;
 }
 

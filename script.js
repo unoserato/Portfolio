@@ -1,13 +1,11 @@
-function stickyNav() {
-  var headerHeight = document.querySelector(".about").offsetHeight / 2;
-  var navbar = document.querySelector(".navbar");
-  var scrollValue = window.scrollY;
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navItems = document.getElementById("navItems");
 
-  if (scrollValue > headerHeight) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-window.addEventListener("scroll", stickyNav);
+  hamburger.addEventListener("click", () => {
+    navItems.classList.toggle("active");
+    // toggle icon from "list" to "x"
+    hamburger.classList.toggle("bi-list");
+    hamburger.classList.toggle("bi-x");
+  });
+});

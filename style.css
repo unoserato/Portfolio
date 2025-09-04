@@ -5,35 +5,35 @@ html {
 }
 
 @media screen and (max-width: 700px) {
+  @media screen and (max-width: 700px) {
   .nav-items {
     max-height: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center horizontally */
-    justify-content: center; /* center vertically */
+    align-items: center;
     background: white;
-    border-radius: 0.8rem;
     width: 100%;
     position: absolute;
-    top: 2.2rem; /* adjust to navbar height */
+    top: 2rem; /* navbar height */
     left: 0;
-    padding: 0;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: max-height 0.4s ease;
   }
 
- .nav-items a{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;  /* even gaps */
-  height: 100%;                   /* let it stretch */
+  .nav-items a {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-items.active {
+    max-height: 100vh;                /* expand to full screen */
+    height: calc(100vh - 2rem);       /* subtract navbar height */
+    justify-content: space-evenly;    /* even vertical spacing */
+  }
 }
 
-.nav-items.active {
-  max-height: 100vh;  /* full screen height */
-  padding: 2rem 0;
-}
   
 @keyframes max-height {
   from {

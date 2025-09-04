@@ -18,17 +18,15 @@ html {
     left: 0;
     transition: max-height 0.4s ease;
   }
-
   .nav-items a {
     font-size: 1.5rem;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     text-align: center;
     width: 100%;
   }
 
   .nav-items.active {
-    max-height: 100vh;                /* expand to full screen */
-    height: calc(100vh - 2rem);       /* subtract navbar height */
+    max-height: 20rem;                /* expand to full screen */
     justify-content: space-evenly;    /* even vertical spacing */
   }
 }

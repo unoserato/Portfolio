@@ -31,12 +31,10 @@ html {
 }
 
 .nav-items.active {
-  max-height: 20rem;  /* full screen height */
+  max-height: 100vh;  /* full screen height */
   padding: 2rem 0;
 }
-
-}
-
+  
 @keyframes max-height {
   from {
     opacity: 0;

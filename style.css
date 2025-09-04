@@ -26,7 +26,7 @@ html {
   }
 
   .nav-items.active {
-    max-height: 20rem;                /* expand to full screen */
+    max-height: 10rem;                /* expand to full screen */
     justify-content: space-evenly;    /* even vertical spacing */
   }
 }

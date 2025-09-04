@@ -16,7 +16,7 @@ html {
     border-radius: 0.8rem;
     width: 100%;
     position: absolute;
-    top: 2.5rem; /* adjust to navbar height */
+    top: 2.2rem; /* adjust to navbar height */
     left: 0;
     padding: 0;
     transition: max-height 0.3s ease, padding 0.3s ease;

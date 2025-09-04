@@ -22,17 +22,19 @@ html {
     transition: max-height 0.3s ease, padding 0.3s ease;
   }
 
-  .nav-items a {
-    padding: 1.5rem 0;
-    text-align: center;
-    font-size: 1.5rem;
-    width: 100%;
-  }
+ .nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;  /* even gaps */
+  height: 100%;                   /* let it stretch */
+}
 
-  .nav-items.active {
-    max-height: 10rem; /* enough space for links */
-    padding: 1rem 0;
-  }
+.nav-items.active {
+  max-height: 100vh;  /* full screen height */
+  padding: 2rem 0;
+}
+
 }
 
 @keyframes max-height {
